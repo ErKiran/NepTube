@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import SearchBar from './components/search_bar';
 import YTsearch from 'youtube-api-search';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_details';
+import Navbar from './components/navbar';
 import './styles/style.css';
 
 const API_KEY='AIzaSyBqH5x6jpGxs5NXqXNcWaLeuzarDf1zpXw';
@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <SearchBar onSearchTermChange={term => this.videoSearch(term)}/>
+      <Navbar onSearchTermChange={term => this.videoSearch(term)}/>
       <VideoDetail video={this.state.selectedVideo}/>
       <VideoList 
       videos={this.state.videos}
