@@ -11,7 +11,7 @@ export default class SearchBar extends Component {
 <a className="navbar-brand">Munutube</a>
 <form className="form-inline">
   <input className="form-control mr-sm-8" type="search" value={this.state.term}
-  onChange={event => this.onInputChange(event.target.value)} placeholder="Eshe! Search Here" aria-label="Search"/>
+  onChange={event => this.onInputChange(event.target.value)} placeholder="Munu! Search gara" aria-label="Search"/>
   <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 </form>
 </nav>
