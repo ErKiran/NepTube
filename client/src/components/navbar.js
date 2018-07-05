@@ -8,9 +8,7 @@ export default class SearchBar extends Component {
     render(){
     return(
       <nav className="navbar navbar-light bg-light justify-content-between">
-<a className="navbar-brand">Neptube</a>
-
-<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+<a className="navbar-brand">Munutube</a>
 <form className="form-inline">
   <input className="form-control mr-sm-8" type="search" value={this.state.term}
   onChange={event => this.onInputChange(event.target.value)} placeholder="Eshe! Search Here" aria-label="Search"/>
