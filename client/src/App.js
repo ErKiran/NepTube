@@ -15,7 +15,7 @@ class App extends Component {
     selectedVideo:null,
    
   };
-  this.videoSearch('NarayanGopalSongs');
+  this.videoSearch('Beautiful Nepal');
 }
   videoSearch(term){
         YTsearch({key:API_KEY,term:term},(videos)=>{
